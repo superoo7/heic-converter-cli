@@ -14,7 +14,26 @@ As an iPhone user, all my photos are saved in HEIC format by default. While HEIC
 
 After dealing with this conversion hassle repeatedly, I created this quick script on top of ImageMagick to automate the process.
 
-Convert your iPhone HEIC photos to universal formats with a single command. Perfect for batch processing.
+## 🎯 Why Not Use ImageMagick Directly?
+
+**For single files, ImageMagick is simpler:**
+```bash
+magick photo.heic photo.jpg    # Direct conversion
+```
+
+**But for batch processing (the real use case), it gets complex:**
+```bash
+# Manual approach - tedious for many files
+magick IMG_001.heic IMG_001.jpg
+magick IMG_002.heic IMG_002.jpg
+magick IMG_003.heic IMG_003.jpg
+# ... repeat for 50+ iPhone photos 😵
+
+# This tool - one simple command
+heicto jpg    # Converts all HEIC files in directory
+```
+
+**This tool shines when you need to convert entire directories of iPhone photos quickly and consistently.**
 
 ## 🚀 Quick Start
 
